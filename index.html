@@ -1,62 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-div{
-margin-bottom: 20px;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url("body.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  header {
+    background-image: url("head.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    font-size: 30px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 25px;
+    height: 125px;
+    background-color: rgba(235, 221, 216, 0.139);
+    padding-right: 70px;
+
+  }
+
+  ul img {
+    height: 80px;
+    float: left;
+    border-radius: 20px;
+
+  }
+
+  li {
+    float: right;
+
+
+
+  }
+nav {
+background-color:pink;
 }
 
-.div1 li {
-  float: left;
-}
-.div2 li {
-  float: right;
-}
+  li a {
+    display: inline-block;
+    color: rgb(8, 8, 249);
+    text-align: center;
+    padding: 25px 7px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
 
-li a {
-  display: block;
+  li a:hover {
+    background-color: rgb(208, 29, 190);
+    border-radius: 25px;
+  }
+
+  aside {
+
+    color: rgb(255, 250, 250);
+    background-color:brown;
+    padding: 20px;
+    line-height: 30px;
+    padding-left: 250px;
+
+  }
+
+  footer {
+  position: fixed;
+  left: 0;  
+  bottom: 0px;
+  width: 100%;
+  background-color: rgb(67, 57, 57);
   color: white;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  text-transform: uppercase;
+  height:70px;
+  padding:20px
 }
-
-li a:hover:not(.active) {
-  background-color: #111;
+main{
+  padding-top: 15px;
+  text-align: center;
+  line-height: 20px;
+  background-color: rgba(0, 0, 255, 0.709);
+  height: 400px;
+  color: azure;
 }
-
-.active {
-  background-color: #04AA6D;
+.padding{
+background-color:red;
+height:200px;
+width:500px;
+padding-left:200px;
+padding-top:70px;
+}
+.margin{
+background-color:yellow;
+height:200px;
+width:500px;
+margin-left:200px;
+margin-top:70px;
+}
+.margin:hover{
+background-color:violet;
+color:white;
+text-transform:uppercase;
+font-size:30px;
+}
+.padding:hover{
+background-color:pink;
+color:yellow;
+text-transform:uppercase;
+font-size:30px;
 }
 </style>
-</head>
+
 <body>
-<div class="div1">
-<ul>
-  <li><a class="active">Home</a></li>
-  <li><a href="#">Blog</a></li>
-  <li><a href="#">Contact</a></li>
-  <li><a href="#">About</a></li>
-</ul>
-</div>
-<div class="div2">
-<ul>
-  <li><a class="active">Home</a></li>
-  <li><a href="#">Blog</a></li>
-  <li><a href="#">Contact</a></li>
-  <li><a href="#">About</a></li>
-</ul>
-</div>
 
+  <header>
+    <h1>APPLICATION DEVELOPER</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <img src="/image/parts.png" alt="">
+      <li> <a href="#">About Me</a> </li>
+      <li> <a href="#">Skills</a> </li>
+      <li> <a href="#">Contact</a> </li>
+      <li> <a href="#">Home</a> </li>
+    </ul>
+  </nav>
+  <aside>
+    <h2>Skills</h2>
+    <h3>Here are some of the technologies I enjoy writing day-to-day:</h3>
+    <p>HTML & CSS</p>
+    <p>JavaScript</p>
+    <p>React js</p>
+    <p>jQuary</p>
+  </aside>
+<main>
+  <h3>TO CONTACT ME</h3>
+  <h4>PLEASE SEND YOUR DETAILS BELOW: </h4>
+  <form>
+    <label for="fname">First Name : </label>
+    <input type="text" name="fname" id="fname"><br>
+    <label for="lname">Last Name : </label>
+    <input type="text" name="lname" id="lname"><br>
+    <label for="email">Email ID : </label>
+    <input type="email" name="email" id="email"><br>
+    <label for="tel">Phone No : </label>
+    <input type="tel" name="tel" id="tel"><br>
+    <label for="address">Address: </label><br>
+    <textarea rows="4" cols="30" id="address" name="address">Please Enter Your Address...</textarea><br>
+    <input type="submit">
+    <input type="reset"><br><br>
+
+    <a href="https://wa.me/7708509982">
+      <img src="C:\Users\ram\Desktop\whatsapp.png" alt="whatsapp" width="300px" height="70px">
+    </a>   
+
+  </form>
+</main>
+<div class="padding">Padding</div>
+<div class="margin">Margin</div>
+
+
+
+
+  
+  <footer>
+    <h6>Follow us</h6>
+    <i class="fa fa-facebook"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-snapchat"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-google"></i>
+    
+      
+  </footer>
 </body>
+
 </html>
-
-
